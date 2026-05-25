@@ -1,4 +1,4 @@
-html,body {
+html, body {
     margin: 0;
     font-family: monospace;
     color: hsl(197, 62%, 32%);
@@ -33,6 +33,12 @@ html,body {
     font-size: 1.2rem;
 }
 
+#chat li:last-of-type {
+    animation-name: slide-in-left;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-in;
+}
+
 @keyframes slide-in-left {
     from {
         transform: translateX(400px);
@@ -43,10 +49,4 @@ html,body {
         transform: translateX(0);
         opacity: 1;
     }
-}
-
-#chat li:last-of-type {
-    animation-name: slide-in-left;
-    animation-duration: 0.15s;
-    animation-timing-function: ease-in;
 }

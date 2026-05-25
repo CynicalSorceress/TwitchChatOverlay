@@ -18,11 +18,11 @@
 </body>
 
 <script>
-    var chat = document.querySelector("#chat>ul");
+    let chat = document.querySelector("#chat>ul");
 
     ComfyJS.onChat = (user, message, flags, self, extra) => {
-        var newMessage = document.createElement("li");
-        var text = document.createElement("blockquote");
+        let newMessage = document.createElement("li");
+        let text = document.createElement("blockquote");
 
         newMessage.innerText = user;
         text.innerText = message;
